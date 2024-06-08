@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'YourCustomFont';
+    src: url('path/to/your/custom-font.woff2') format('woff2'),
+         url('path/to/your/custom-font.woff') format('woff');
+  }
+  
+  body {
+    font-family: 'YourCustomFont', consolas;
+    margin: 0;
+  }
+  
+  #header {
+    height: 50px;
+    background-color: grey;
+    display: flex;
+    align-items: center; /* Vertically center items */
+  }
+  
+  .title_name {
+    padding-left: 20px; /* Adjust as needed */
+  }
+  
+  .title_name h1 {
+    color: black;
+    text-align: center;
+    margin: 0; /* Remove default margin */
+  }
+  
+  .navbar {
+    flex: 1; /* Expand to take remaining space */
+    text-align: right; /* Align navigation links to the right */
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+  }
+  
+  .navbar ul li {
+    display: inline-block; /* Display list items horizontally */
+    margin-left: 20px; /* Adjust spacing between items */
+  }
+  
+  .navbar ul li:first-child {
+    margin-left: 0; /* Remove left margin from the first item */
+  }
+  
+  .navbar ul li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .navbar ul li a:hover {
+    color: #333; /* Change color on hover */
+  }
+
+  #about_me{
+    padding-left: 30px;
+  }
+
+
+  #image h3{
+    flex: 1;
+    justify-content: left;
+    width: 800px;
+  }
+
+  .flex_container img{
+    height: 200px;
+    width: 500px;
+    height: 300px;
+    float: right;
+    padding-right: 90px;
+    transition: transform 0.5s ease;
+    border-radius: 50%;
+  }
+
+  .flex_container:hover img{
+    transform: rotate(360deg);
+  }
+
+  .flex_container:hover::after{
+    content: "My hobbies are painting, designing and listening to podcasts. my strenght are my dedication to my work and time management";
+    position: absolute;
+    width: 900px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 18px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px 20px;
+      border-radius: 5px;
+      z-index: 999;
+  }
+
+  #text{
+    overflow: hidden;
+  }
+
+  #my_projects h2{
+    text-align: center;
+  }
+
+  #my_projects ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  #my_projects ul li{
+    display: inline-block;
+    margin-left: 60px;
+  }
+
+  .list-names ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .list-names ul li{
+    display: inline-block;
+    margin-left: 250px;
+  }
